@@ -1,0 +1,16 @@
+<div class= "top">
+  <%= render "tweets/top" %>
+</div>
+
+<div class ="main">
+  <div class= "main_contents">
+    <%= render "tweets/main_contents" %>
+  </div>
+  <div class= "pagination">
+    <%= paginate @tweets %>
+  </div>
+</div>
+
+<div class= "footer">
+  <%= render "tweets/footer" %>
+</div>

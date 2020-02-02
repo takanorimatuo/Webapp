@@ -1,0 +1,75 @@
+<div class= "user_menu">
+  <div class= "log_out_btn">
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+  </div>
+
+  <div class= "user_top_menu">
+    <ul>
+      <li>
+        <div class= "pick_up_custom">
+          <div class= "pick_up_title">
+            <h3>
+              おすすめ商品
+            </h3>
+          </div>
+         <ul>
+            <li>
+              <div class= "create">
+                <a href= "tweets/new">投稿する</a>
+              </div>
+            </li>
+            <li>
+              <div class= "edit">
+                <a href= "tweets/show">編集する</a>
+              </div>
+            </li>
+         </ul>
+        </div>
+      </li>
+      <li>
+        <div class= "food_custom">
+          <div class= "food_title">
+            <h3>
+              Foodメニュー
+            </h3>
+          </div>
+          <ul>
+            <li>
+              <div class= "create">
+                <a href= "foods/new">商品登録</a>
+              </div>
+           </li>
+           <li>
+              <div class= "edit">
+                <a href= "foods/show">編集する</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class= "drink_custom">
+          <div class= "drink_title">
+            <h3>
+              Drinkメニュー
+            </h3>
+          </div>
+          <ul>
+            <li>
+              <div class= "create">
+                <a href= "drinks/new">商品登録</a>
+              </div>
+            </li>
+            <li>
+              <div class= "edit">
+                <a href= "drinks/show">編集する</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+    
+  

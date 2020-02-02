@@ -1,0 +1,360 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.top_header {
+  border-bottom: 5px solid green;
+  background-image: url(https://www.k-rara.com/blog/wp-content/uploads/2018/11/i-13-640x410.jpg);
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.contents_copy p{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  height: 20px;
+  font-size: 20px;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.top_header_name {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.top_header_name a {
+  text-decoration: none;
+  font-size: 200px;
+  color: black;
+  font-family: fantasy;
+}
+
+.top_header_name span {
+  color: red;
+}
+
+.top_header_image {
+  padding-bottom: 50px;
+}
+
+.menu_btn {
+  font-size: 40px;
+  font-family: 'Comic Sans MS';
+  text-align: center;
+}
+
+.menu_btn li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.menu_btn a {
+  text-decoration: none;
+  padding: 30px;
+  margin: 50px 40px;
+  -webkit-text-stroke: 2px black;
+  color: white;
+}
+
+.food_btn {
+  background-color: #dbd81f;
+  border: solid 3px #dbd81f;
+  padding: 0.2em;
+  border-radius: 0.5em;
+}
+
+.drink_btn {
+  background-color: #1eb4b4;
+  border: solid 3px #1eb4b4;
+  padding: 0.2em;
+  border-radius: 0.5em;
+}
+
+.access_btn {
+  background-color: #941b2f;
+  border: solid 3px #941b2f;
+  padding: 0.2em;
+  border-radius: 0.5em;
+}
+
+
+.main {
+  height: 1200px;
+  background-image: url(https://cdn.kurashi-no.jp/production/posts/eyecatches/000/016/357/medium.jpg?1520492605);
+  overflow: scroll;
+  
+}
+
+.tweets_contents {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contents_name h1 {
+  display: inline-block;
+  font-size: 100px;
+  padding-top: 30px;
+  font-family: 'Comic Sans MS';
+  border-bottom: 4px solid red ;
+  margin-bottom: 50px;
+  
+}
+.main_contents {
+  text-align: center;
+}
+
+.content_post {
+  width: 900px;
+  height: 300px;
+  background-size: cover;
+  margin: 20px auto;
+  
+}
+
+.content_product {
+  padding-top: 40px;
+  font-size: 50px;
+  padding-bottom: 30px;
+  font-family: 'arial unicode ms';
+}
+
+.content_text  {
+  font-size: 30px;
+}
+
+.pagination {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Georgia';
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer {
+  height: 100px;
+  background-image: url(https://cdn.kurashi-no.jp/production/posts/eyecatches/000/013/173/medium.jpg?1513346251);
+}
+
+.footer_info {
+  font-size: 20px;
+  padding: 15px 40px;
+  float: left;
+  line-height: 25px;
+}
+
+.footer_user {
+  color: white;
+}
+
+.footer a {
+  font-size: 30px;
+  text-decoration: none;
+  margin: 30px 40px;
+  float: right;
+  color: white;
+  font-family: monospace;
+  background-color: black;
+  border: solid 3px black;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  
+
+}
+.access {
+  text-align: center;
+}
+.map h1 {
+  display: inline-block;
+  font-size: 100px;
+  padding-top: 50px;
+  font-family: 'Comic Sans MS';
+  border-bottom: 4px solid red;
+}
+
+.map_info {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.map_add {
+  font-size: 60px;
+  line-height: 90px;
+  font-family: 'arial unicode ms';
+}
+
+.contents_row {
+  text-align: center;
+  
+}
+
+.contents_row h3 {
+  font-size: 30px;
+  margin: 40px;
+}
+
+.contents_row p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.log_out_btn {
+  text-align: center;
+}
+
+.more_list {
+  border-bottom: solid 2px;
+}
+
+.more_list li {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.more_list a {
+  font-size: 40px;
+  -webkit-text-stroke: 1px black;
+  text-decoration: none;
+  margin: 0 30px;
+}
+
+.contents_row h3 {
+  font-size: 50px;
+}
+
+.contents_row p {
+  font-size: 30px;
+  -webkit-text-stroke: 0.4px white;
+}
+
+.send_menu {
+  height: 52em;
+  background-image: url(https://d1f5hsy4d47upe.cloudfront.net/bb/bb06444b371f4803f889d3eb93176372_t.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+
+.product_name {
+  height: 30px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.product_text {
+  height: 90px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.product_image {
+  height: 30px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.product_price {
+  height: 30px;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.send_btn {
+  font-size: 30px;
+  height: 50px;
+  width: 80px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.edit_title h3{
+  font-size: 50px;
+}
+
+.main_edit {
+  height: 1700px;
+  background-image: url(https://d1f5hsy4d47upe.cloudfront.net/bb/bb06444b371f4803f889d3eb93176372_t.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+
+.edit_btn {
+  color: white;
+}
+
+.delete_btn {
+  color: white;
+}
+
+.success {
+  height: 52em;
+  background-image: url(https://d1f5hsy4d47upe.cloudfront.net/bb/bb06444b371f4803f889d3eb93176372_t.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+
+.content_price {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.content_price p {
+  font-size: 40px;
+}
+
+.content_price li {
+  display: inline-block;
+}

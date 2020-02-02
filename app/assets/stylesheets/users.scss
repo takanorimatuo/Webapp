@@ -1,0 +1,153 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.log_in {
+  height: 52em;
+  background-image: url(https://d1f5hsy4d47upe.cloudfront.net/bb/bb06444b371f4803f889d3eb93176372_t.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+
+.log_in_title {
+  font-size: 100px;
+  color: gray;
+  padding: 50px;
+  -webkit-text-stroke: 2px black;
+  font-family: 'arial black';
+}
+
+.log_in_menu {
+  font-size: 60px;
+  font-family: 'arial black';
+  
+}
+
+.form {
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+}
+
+.log_in_btn {
+  font-size: 30px;
+  height: 50px;
+  width: 150px;
+  background-color: #10ffaf;
+  font-family: 'arial black';
+  -webkit-text-stroke: 1px white;
+  border-radius: 0.5em;
+  box-shadow: 0 3px 6px #0f835c;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.user_menu {
+  height: 52em;
+  background-image: url(https://d1f5hsy4d47upe.cloudfront.net/bb/bb06444b371f4803f889d3eb93176372_t.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+
+.log_out_btn {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-family: monospace;
+  background-color: black;
+  border: solid 3px black;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  height: 40px;
+  width: 300px;
+  margin: auto;
+
+}
+
+.log_out_btn a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: 'arial black';
+}
+
+
+.user_top_menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  
+
+}
+
+.user_top_menu li {
+  display: inline-block;
+  border: solid 3px black;
+  padding: 20px 90px;
+  margin-top: 20px;
+}
+
+.user_top_menu h3 {
+  font-size: 40px;
+}
+
+.pick_up_title h3 {
+  color:red;
+
+}
+
+.food_title h3 {
+  color: yellow;
+}
+
+.drink_title h3 {
+  color: blue;
+}
+
+.create {
+  background-image: url()
+}

@@ -1,0 +1,39 @@
+<div class= "user_menu">
+  <div class= "log_out_btn">
+    <%= link_to '戻る', "/users" %>
+  </div>
+  <div class= "edit_title">
+    <h3>
+      Foodメニュー編集
+    </h3>
+  </div>
+<div class= "main_edit">
+  <% @foods.each do |food| %>
+    <div class="content_post" style="background-image: url(<%= food.image %>);">
+      <div class= "content_product">
+        <%= simple_format(food.product) %>
+      </div>
+      <div class= "content_text">
+        <%= food.text %>
+      </div>
+      <div class= "content_link">
+        <%= food.price %>
+      </div>
+    </div>
+    <div class= "edit">
+        <ul class="more_list">
+          <li>
+            <%= link_to '編集', "/foods/#{food.id}/edit", method: :get, class: "edit_btn" %>
+          </li>
+          <li>
+            <%= link_to '削除', "/foods/#{food.id}", method: :delete, class: "delete_btn" %>
+          </li>
+        </ul>
+    </div>
+  <% end %>
+<div class= "pagination">
+    <%= paginate @foods %>
+  </div>
+</div>
+</div>
+

@@ -1,0 +1,21 @@
+<div class= "send_menu">
+  <div class= "log_out_btn">
+    <%= link_to '戻る', "/users" %>
+  </div>
+    
+  <div class= "contents_row">
+    <h3>
+      おすすめ商品を投稿する
+    </h3>
+    <%= form_for(@tweet) do |f| %>
+      <p>商品名</p>
+      <%= f.text_field  :product, placeholder: "商品名を入力", class: "product_name" %>
+      <p>記事を入力</p>
+      <%= f.text_area :text, placeholder: "ここに記事を入力", class: "product_text" %>
+      <p>画像を選択</p>
+      <%= f.text_field :image, placeholder: "ここに画像URLを添付", class: "product_image" %>
+      <p></p>
+      <%= f.submit "投稿", class: "send_btn" %>
+    <% end %>
+  </div>
+</div>

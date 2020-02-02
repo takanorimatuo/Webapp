@@ -1,0 +1,37 @@
+<div class= "user_menu">
+  <div class= "log_out_btn">
+    <%= link_to '戻る', "/users" %>
+  </div>
+  <div class= "edit_title">
+    <h3>
+      おすすめ商品編集
+    </h3>
+  </div>
+  <div class= "main_edit">
+    <% @tweets.each do |tweet| %>
+      <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+        <div class= "content_product">
+          <%= simple_format(tweet.product) %>
+        </div>
+        <div class= "content_text">
+          <%= tweet.text %>
+        </div>
+      </div>
+      <div class= "edit">
+        <ul class="more_list">
+          <li>
+            <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get, class: "edit_btn" %>
+          </li>
+          <li>
+            <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete, class: "delete_btn" %>
+          </li>
+        </ul>
+      </div>
+    <% end %>
+  <div class= "pagination">
+    <%= paginate @tweets %>
+  </div>
+</div>
+</div>
+
+

@@ -1,0 +1,34 @@
+<div class= "top">
+  <%= render "tweets/top"%>
+</div>
+
+<div class= "main">
+  <% @drinks.each do |drink| %>
+    <div class="content_post" style="background-image: url(<%= drink.image %>);">
+      <div class= "content_product">
+        <%= simple_format(drink.product) %>
+      </div>
+      <div class= "content_text">
+        <%= drink.text %>
+      </div>
+      <div class= "content_price">
+        <ul>
+          <li>
+            <%= drink.price %>
+          </li>
+          </li>
+            <p>円</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class= "pagination">
+    <%= paginate @drinks %>
+  </div>
+</div>
+
+<div class= "footer">
+  <%= render "tweets/footer" %>
+</div>

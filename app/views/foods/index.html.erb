@@ -1,0 +1,27 @@
+<div class= "top">
+  <%= render "tweets/top"%>
+</div>
+
+<div class= "main">
+  <% @foods.each do |food| %>
+    <div class="content_post" style="background-image: url(<%= food.image %>);">
+      <div class= "content_product">
+        <%= simple_format(food.product) %>
+      </div>
+      <div class= "content_text">
+        <%= food.text %>
+      </div>
+      <div class= "content_price">
+        <%= food.price %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class= "pagination">
+    <%= paginate @foods %>
+  </div>
+</div>
+
+<div class= "footer">
+  <%= render "tweets/footer" %>
+</div>

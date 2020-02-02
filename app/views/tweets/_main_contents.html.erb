@@ -1,0 +1,22 @@
+<div class = "tweets_contents">
+  <div class= "contents_name">
+    <h1>
+    pick-up!
+    </h1>
+  </div>
+  <div class= "tweets_products">
+    <% @tweets.each do |tweet| %>
+      <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+        <div class= "content_product">
+          <%= simple_format(tweet.product) %>
+        </div>
+        <div class= "content_text">
+          <%= tweet.text %>
+        </div>
+        <div class= "content_link">
+          
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
